@@ -12,6 +12,11 @@ function Podcast() {
                 <p id="about-text">
                     This is where we will embed our youtube links for the podcasts. Below is kind of an example where we can put the youtube video in here, and format it into a grid that users 
                     can click on.
+                    <br></br>
+                    Separate cards with videos in it (implement bootstrap)
+                    <br></br>
+                    Look into apis that we can update videos dynamically
+                    <br></br>
                 </p>
                 <div class="space"></div>
                 <p>
