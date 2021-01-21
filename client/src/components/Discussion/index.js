@@ -10,6 +10,12 @@ function Discussion() {
                     </div>
                 </div>
                 <p id="about-text">
+                    What we want users to do?
+                    <br></br>
+                    comments
+                    <br></br>
+                    Bryce, Roger, Garret backend implement
+                    <br></br>
                     This is where we will implement the "Deep Thoughts" sort of thing where we can show previews of comments
                     and have users login if they want to make a contribution
                 </p>
