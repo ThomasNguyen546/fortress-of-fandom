@@ -6,6 +6,7 @@ function Footer() {
         <footer>
             <p>
                 temp footer
+                Links to different platforms with icons
             </p>
         </footer>
     )
