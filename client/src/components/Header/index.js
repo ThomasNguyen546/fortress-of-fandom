@@ -14,7 +14,7 @@ function Header () {
   return (
     <header>
       <div id="header">
-      <h2 className="header-name">
+      <h2 className="headerName">
         <a href="/">
           Fortress of Fandom
         </a>

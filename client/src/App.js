@@ -8,6 +8,7 @@ import About from './components/About';
 import Header from './components/Header';
 import Podcast from './components/Podcast';
 import Discussion from './components/Discussion';
+import Shop from './components/Shop';
 
 function App() { 
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/about" component={About} />
             <Route exact path="/Podcast" component={Podcast} />
             <Route exact path="/Discussion" component={Discussion} />
+            <Route exact path="/Shop" component={Shop} />
      </Switch>
      {/* <Footer></Footer> */}
     </div>
