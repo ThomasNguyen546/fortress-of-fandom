@@ -15,6 +15,9 @@ function Nav(props) {
                 <li className="mx-2">
                     <Link to="/discussion">Discussion</Link>
                 </li>
+                <li className="mx-2">
+                    <Link to="/shop">Shop</Link>
+                </li>
             </ul>
         </nav>
 

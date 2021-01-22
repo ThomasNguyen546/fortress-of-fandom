@@ -20,7 +20,7 @@ function Podcast() {
                 </p>
                 <div class="space"></div>
                 <p>
-                <iframe width="853" height="480" src="https://www.youtube.com/embed/y73_RpazLVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="youtube" width="853" height="480" src="https://www.youtube.com/embed/y73_RpazLVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </p>
                 <br>
                 </br>
