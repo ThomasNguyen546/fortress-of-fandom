@@ -8,14 +8,12 @@ body {
   background-color: rgba(195, 233, 255, 0.8);
   background-size: 100%;
   color: white;
-  font-family: Helvetica, Arial, sans-serif;
   height: 100%;
   position: relative;
 
 }
 
 #wrapper {
-  font-family: 'Covered By Your Grace';
   min-height: 100vh; /* will cover the 100% of viewport */
   overflow: hidden;
   display: block;
@@ -40,14 +38,14 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 150px;
+  height: 130px;
 }
 
 .header {
   opacity: .8;
 }
 
-header .header-name a {
+header .headerName a {
   font-size: 50px;
   color: white;
   text-align: right;
@@ -79,7 +77,7 @@ nav ul li a {
 
 .page-container {
   margin: 80px auto;
-  width: 80%;
+  width: 90%;
   background-color: rgba(125, 201, 245, 0.8);
   padding: 40px;
 }
@@ -99,11 +97,13 @@ nav ul li a {
   text-align: center;
 }
 
-.profile-img {
-  border-radius: 100px;
-}
-
 /* Break space */
 .space {
   margin-top: 50px;
+}
+
+/* Shop Page */
+#shop-text {
+  font-size: 30px;
+  text-align: center;
 }
