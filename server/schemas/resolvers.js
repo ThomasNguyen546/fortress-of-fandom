@@ -16,11 +16,11 @@ const resolvers = {
         .select('-__v -password')
         .populate('comments');
     },
-    Comments: async (parent, { username }) => {
+    comments: async (parent, { username }) => {
       const params = username ? { username } : {};
       return Comments.find(params).sort({ createdAt: -1 });
     },
-    Comment: async (parent, { _id }) => {
+    comment: async (parent, { _id }) => {
       return Comments.findOne({ _id });
     }
   },
