@@ -45,7 +45,6 @@ a:hover {
 
 .header {
   opacity: .8;
-  text-decoration: underline;
 }
 
 header .headerName a {
@@ -74,12 +73,13 @@ nav ul li a {
   font-weight: lighter;
   font-size: 16px;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  border-bottom: 3px solid;
+  /* border-bottom: 3px solid; */
   cursor: pointer;
 }
 
 nav ul li a:hover {
   text-decoration: none;
+  color: red;
 }
 
 .page-container {
