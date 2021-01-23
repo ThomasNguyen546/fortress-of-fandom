@@ -1,19 +1,31 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  HashRouter,
-  Switch,
-  Route
-} from "react-router-dom";
+import { ApolloProvider } from '@apollo/react-hooks';
+import ApolloClient from 'apollo-boost';
+import { HashRouter, Switch, Route } from "react-router-dom";
 import About from './components/About';
 import Header from './components/Header';
 import Podcast from './components/Podcast';
 import Discussion from './components/Discussion';
 import Shop from './components/Shop';
 
+const client = new ApolloClient({
+  request: operation => {
+    const token = localStorage.getItem('id_token');
+
+    operation.setContext({
+      headers: {
+        authorization: token ? `Bearer ${token}` : ''
+      }
+    });
+  }, 
+  uri: '/graphql'
+});
+
 function App() { 
   return (
     <div>
+    <ApolloProvider client={client}>
     <HashRouter>
     <div id="wrapper">
       <Header></Header>
@@ -23,10 +35,12 @@ function App() {
             <Route exact path="/Podcast" component={Podcast} />
             <Route exact path="/Discussion" component={Discussion} />
             <Route exact path="/Shop" component={Shop} />
+            <Route exact path="/Login" component={Login} />
      </Switch>
      {/* <Footer></Footer> */}
     </div>
     </HashRouter>
+    </ApolloProvider>
     </div>
   )
 }

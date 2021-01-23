@@ -1,11 +1,16 @@
 const jwt = require('jsonwebtoken');
 
+// set token secret and expiration date
 const secret = 'mysecretsshhhhh';
 const expiration = '2h';
 
 module.exports = {
+  // function for our authenticated routes
   authMiddleware: function({ req }) {
     // allows token to be sent via req.body, req.query, or headers
+    //req.body.token is coming from the req
+    //req.query.token is from the Apollo Server
+    
     let token = req.body.token || req.query.token || req.headers.authorization;
 
     // ["Bearer", "<tokenvalue>"]
@@ -15,7 +20,7 @@ module.exports = {
         .pop()
         .trim();
     }
-
+    // if no token, return request object as is
     if (!token) {
       return req;
     }
@@ -27,6 +32,7 @@ module.exports = {
       console.log('Invalid token');
     }
 
+    // return updated request object
     return req;
   },
   signToken: function({ username, email, _id }) {
@@ -35,3 +41,4 @@ module.exports = {
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
   }
 };
+
