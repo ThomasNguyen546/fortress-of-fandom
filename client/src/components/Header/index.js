@@ -10,12 +10,12 @@ function Header () {
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
-
+  
   return (
     <header>
       <div id="header">
       <h2 className="headerName">
-        <a href="/">
+        <a href="/" class="intro">
           Fortress of Fandom
         </a>
       </h2>
