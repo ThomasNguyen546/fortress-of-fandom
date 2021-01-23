@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Podcast from './components/Podcast';
 import Discussion from './components/Discussion';
 import Shop from './components/Shop';
+import Login from './components/Login';
 
 const client = new ApolloClient({
   request: operation => {
