@@ -84,13 +84,13 @@ nav ul li a:hover {
 
 .page-container {
   margin: 80px auto;
+  margin-bottom: 15px;
   width: 90%;
   background-color: rgba(125, 201, 245, 0.8);
   padding: 40px;
 }
 
 .section-title {
-  font-family: 'Covered By Your Grace';
   font-size: 30px;
   /* color: white; */
   padding-bottom: 20px;
@@ -136,11 +136,6 @@ nav ul li a:hover {
   margin: auto;
   justify-content: center;
 }
-
-
-
-
-
 
 @import url(https://fonts.googleapis.com/css?family=Satisfy); 
 @import url(https://fonts.googleapis.com/css?family=Six+Caps);
@@ -246,4 +241,37 @@ body {
 
 .outro--smart {
   display: block;
+}
+
+/* footer */
+.social-links {
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(71, 133, 247, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul {
+  display: flex;
+  font-size: 1.5vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+}
+
+footer ul li {
+  margin: 20px;
+}
+
+.footerImage {
+  height: 75px;
+  margin: 5px;
+  padding: 5px;
 }
