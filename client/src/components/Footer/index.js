@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardDeck } from 'react-bootstrap';
+// import { Card, CardDeck } from 'react-bootstrap';
 
 // images for Footer
 import spotifyImage from "../../assets/spotify.png"

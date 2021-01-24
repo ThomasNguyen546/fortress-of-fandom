@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import Nav from '../Nav';
 
+
 function Header () {
 
   const [pages] = useState([
     { name: 'About Me', id: 'aboutme' },
     { name: 'Podcast', id: 'podcast' },
-    { name: 'Discussion', id: 'discussion' }
+    { name: 'Discussion', id: 'discussion' },
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);

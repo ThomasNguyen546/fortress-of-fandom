@@ -10,7 +10,8 @@ import Discussion from './components/Discussion';
 import Shop from './components/Shop';
 import Login from './components/Login';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import SignUp from './components/Signup';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 
 const client = new ApolloClient({
   request: operation => {
@@ -38,6 +39,7 @@ function App() {
             <Route exact path="/Podcast" component={Podcast} />
             <Route exact path="/Discussion" component={Discussion} />
             <Route exact path="/Shop" component={Shop} />
+            <Route exact path="/Signup" component={SignUp} />
             <Route exact path="/Login" component={Login} />
             <Route exact path="/Footer" component={Footer} />
      {/* </Switch> */}
