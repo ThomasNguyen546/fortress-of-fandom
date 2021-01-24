@@ -20,7 +20,7 @@ class AuthService {
                 return true;
             } else return false;
             
-        } catch (err) {auth 
+        } catch (err) {
         return false
      }
     }
