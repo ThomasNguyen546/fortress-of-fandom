@@ -13,7 +13,7 @@ function Header () {
   
   return (
     <header>
-      <div id="header">
+      <div id="header" className="hero-image">
       <h2 className="headerName">
         <a href="/" class="intro">
           Fortress of Fandom
