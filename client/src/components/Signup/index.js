@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { useMutation } from '@apollo/react-hooks';
 import { ADD_USER } from '../../utils/mutations';
 import Auth from '../../utils/auth';
+import '../../App.css';
 
 const Signup = () => {
-    const [formState, setFormState] = useState({ username: '', email: '', password: ''});
+    const [formState, setFormState] = useState({ username: '', email: '', password: '' });
     const [addUser, { error }] = useMutation(ADD_USER);
 
     //update state if the form changes
@@ -22,8 +23,8 @@ const Signup = () => {
         event.preventDefault();
 
         try {
-            const{ data } = await addUser({
-                variables: {...formState}
+            const { data } = await addUser({
+                variables: { ...formState }
             });
 
             Auth.login(data.addUser.token);
@@ -33,43 +34,45 @@ const Signup = () => {
     };
 
     return (
-        <main >
+        <main className="userForms">
             <h4>Sign Up</h4>
+            <div >
             <form onSubmit={handleFormSubmit}>
-            <input
-                className=""
-                placeholder="Username"
-                name="username"
-                type="username"
-                id="username"
-                value={formState.username}
-                onChange={handleChange}
-            />
-            <input
-            className=""
-            placeholder="Email"
-            name="email"
-            type="email"
-            id="email"
-            value={formState.email}
-            onChange={handleChange}
-            />
-            <input
-            className=""
-            placeholder="Password"
-            name="password"
-            type="password"
-            id="password"
-            value={formState.password}
-            onChange={handleChange}
-            />
-            <button className="" type="submit">
-                Submit
+                <input
+                    className="formFields"
+                    placeholder="Username"
+                    name="username"
+                    type="username"
+                    id="username"
+                    value={formState.username}
+                    onChange={handleChange}
+                />
+                <input
+                    className="formFields"
+                    placeholder="Email"
+                    name="email"
+                    type="email"
+                    id="email"
+                    value={formState.email}
+                    onChange={handleChange}
+                />
+                <input
+                    className="formFields"
+                    placeholder="Password"
+                    name="password"
+                    type="password"
+                    id="password"
+                    value={formState.password}
+                    onChange={handleChange}
+                />
+                <button className="formFields submit-btn" type="submit">
+                    Submit
             </button>
             </form>
+            </div>
             {error && <div>Signup failed</div>}
         </main>
-    ) 
+    )
 }
 
 export default Signup;

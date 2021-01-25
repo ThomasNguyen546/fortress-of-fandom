@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+.userForms {
+  text-align: center;
+  margin: 45px 200px;
+  display: wrap;
+  flex-direction: column;
+}
+
+.formFields {
+  margin: 5px;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 7px;
+  border: 0;
+  margin:5px;
+}
+.submit-btn {
+  color: darkslategrey;
+  background-color: #61dafb;
+}
+.submit-btn:hover {
+  background-color: #14bbe9;
+}
+.commentform {
+  width: 100%;
+  margin: 40px 200px;
+  border-radius:5px;
+  border: 0;
+}
+.discussion {
+  text-align: center;
+  margin: 45px 200px;
+  display: wrap;
+  flex-direction: column;
+}
