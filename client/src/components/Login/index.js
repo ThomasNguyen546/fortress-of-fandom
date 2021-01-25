@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/react-hooks';
 import { LOGIN_USER } from '../../utils/mutations';
+import '../../App.css';
 
 import Auth from '../../utils/auth';
 
@@ -40,11 +41,11 @@ const Login = props => {
   };
 
   return (
-    <main>
+    <main className="userForms">
           <h4>Login</h4>
            <form onSubmit={handleFormSubmit}>
               <input
-                className="form-input"
+                className="formFields"
                 placeholder="Your email"
                 name="email"
                 type="email"
@@ -53,7 +54,7 @@ const Login = props => {
                 onChange={handleChange}
               />
               <input
-                className=""
+                className="formFields"
                 placeholder="******"
                 name="password"
                 type="password"
@@ -61,7 +62,7 @@ const Login = props => {
                 value={formState.password}
                 onChange={handleChange}
               />
-              <button  type="submit">
+              <button  className="formFields submit-btn" type="submit">
                 Submit
               </button>
             </form>

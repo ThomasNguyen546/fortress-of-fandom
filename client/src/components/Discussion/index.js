@@ -1,30 +1,46 @@
-import React from 'react';
+import React,  { useState } from 'react';
+import { useMutation } from '@apollo/react-hooks';
+import { ADD_COMMENT } from '../../utils/mutations';
+import '../../App.css';
 
-function Discussion() {
+function Discussion( { comments })  {
+    // const [commentText, setCommentText] = useState('');
+
+    // const [addComment, {error}] = useMutation(ADD_COMMENT, {
+    //     update(cache, {data: {addComment}}){
+    //         try {
+    //             const { comments } = cache.readQuery({ query: QUERY_COMMENTS});
+    //             //put the newest comment at the beginning of the array
+    //             cache.writeQuery({
+    //                 query: QUERY_COMMENTS,
+    //                 data: { comments: [addComment, ...comments]}
+    //             })
+    //         } catch(e) {
+    //             console.error(e);
+    //         }
+    //     }
+    // })
     return (
-        <section>
-            <div className="page-container">
-                <div id="about-header">
-                    <div className="section-title">
-                        <h2>Fortress of Fandom</h2>
-                    </div>
-                </div>
-                <p id="about-text">
-                    What we want users to do?
-                    <br></br>
-                    comments
-                    <br></br>
-                    Bryce, Roger, Garret backend implement
-                    <br></br>
-                    This is where we will implement the "Deep Thoughts" sort of thing where we can show previews of comments
-                    and have users login if they want to make a contribution
-                </p>
-                <br>
-                </br>
-                <p id="about-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
+        <section className="discussion">
+         <h4> Join the Discussion of this week's Episode!</h4>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/6G8YcVVgBZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <form 
+         className="" 
+        //  onSubmit={handleFormSubmit}
+         >
+            <textarea
+                placeholder="Spiderman is undoubtly the best super hero there is..."
+                // value={commentText}
+                className="formFields"
+                // onchange={handleChange}
+            >
+            </textarea>
+            <button className='submit-btn formFields' type="submit">
+                Submit
+            </button>
+         </form>
+         <h5>Here are some peoples comments!</h5>
+        
         </section>
     );
 }
