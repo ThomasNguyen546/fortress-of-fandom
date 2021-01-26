@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import Nav from '../Nav';
 
+
 function Header () {
 
   const [pages] = useState([
     { name: 'About Me', id: 'aboutme' },
     { name: 'Podcast', id: 'podcast' },
-    { name: 'Discussion', id: 'discussion' }
+    { name: 'Discussion', id: 'discussion' },
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
   
   return (
     <header>
-      <div id="header">
+      <div id="header" className="hero-image">
       <h2 className="headerName">
         <a href="/" class="intro">
           Fortress of Fandom
