@@ -1,6 +1,7 @@
 import React from 'react';
 import logoImg from '../../assets/logo.png'
 
+
 function About() {
     return (
         <section>

@@ -9,6 +9,7 @@ import Podcast from './components/Podcast';
 import Discussion from './components/Discussion';
 import Shop from './components/Shop';
 import Login from './components/Login';
+import Footer from './components/Footer'
 
 const client = new ApolloClient({
   request: operation => {
@@ -38,7 +39,7 @@ function App() {
             <Route exact path="/Shop" component={Shop} />
             <Route exact path="/Login" component={Login} />
      </Switch>
-     {/* <Footer></Footer> */}
+     <Footer></Footer>
     </div>
     </HashRouter>
     </ApolloProvider>
