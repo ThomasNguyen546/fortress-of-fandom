@@ -34,6 +34,7 @@ a:hover {
 /*-- Header --*/
 #header {
   background-color: rgba(42, 55, 243, 0.8);
+  /* background-image: url(../src/assets/hero.jpg); */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -43,13 +44,18 @@ a:hover {
   padding: 20px;
 }
 
+.hero-image {
+  background-image: url(../src/assets/hero.jpg);
+  background-size: cover;
+}
+
 .header {
   opacity: .8;
 }
 
 header .headerName a {
   font-size: 50px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: right;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -71,26 +77,25 @@ nav ul li a {
   padding: 10px;
   margin: 30px;
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 32px;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  /* border-bottom: 3px solid; */
   cursor: pointer;
 }
 
 nav ul li a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: red;
 }
 
 .page-container {
   margin: 80px auto;
+  margin-bottom: 15px;
   width: 90%;
   background-color: rgba(125, 201, 245, 0.8);
   padding: 40px;
 }
 
 .section-title {
-  font-family: 'Covered By Your Grace';
   font-size: 30px;
   /* color: white; */
   padding-bottom: 20px;
@@ -136,62 +141,6 @@ nav ul li a:hover {
   margin: auto;
   justify-content: center;
 }
-
-footer div ul{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  /* padding: 10px; */
-}
-
-footer div li a {
-  text-decoration: none;
-  color: white;
-  /* padding: 10px; */
-  margin: 30px;
-  font-weight: lighter;
-  font-size: 16px;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  /* border-bottom: 3px solid; */
-  cursor: pointer;
-}
-
-
-
-.social-footer-icons{
-  padding: 20px;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-
 
 @import url(https://fonts.googleapis.com/css?family=Satisfy); 
 @import url(https://fonts.googleapis.com/css?family=Six+Caps);
@@ -259,7 +208,7 @@ body {
   position: absolute;
   z-index: 1;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; */
 }
 
 .vintage__bot {
@@ -299,4 +248,35 @@ body {
   display: block;
 }
 
+/* footer */
+.social-links {
+  text-align: center;
+}
 
+footer {
+  background-color: rgba(71, 133, 247, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul {
+  display: flex;
+  font-size: 1.5vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+}
+
+footer ul li {
+  margin: 20px;
+}
+
+.footerImage {
+  height: 75px;
+  margin: 10px auto;
+  padding: 5px;
+}
