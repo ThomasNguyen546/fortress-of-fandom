@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/react-hooks';
 import { ADD_COMMENT } from '../../utils/mutations';
+import { QUERY_COMMENTS } from '../../utils/queries'
 import '../../App.css';
 
 function Discussion({ comments }) {
