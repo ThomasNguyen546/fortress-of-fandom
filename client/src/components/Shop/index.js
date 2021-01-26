@@ -23,6 +23,7 @@ function Shop() {
                     add button in homepage that goes directly to store (call to action). Favicon icon (shopping cart) (fontawesome?)
                 </p> */}
             </div>
+            <div class="space"></div>
             <Carousel class="carousel">
                 <Carousel.Item interval={3000}>
                     <img
