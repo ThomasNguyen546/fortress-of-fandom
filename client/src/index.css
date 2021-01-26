@@ -19,7 +19,7 @@ body .background {
   display: block;
   position: relative;
   padding-bottom: 100px; /* height of your footer */
-  background-color: rgba(166, 221, 253, 0.8);
+  background-color: rgba(34, 234, 248, 0.205);
  }
 
 a {
@@ -128,6 +128,8 @@ nav ul li a:hover {
 
 .carousel {
   text-align: center;
+  outline-style: solid;
+  outline-color:rgba(0, 0, 0, 0.205);
 }
 
 .shopTitle .shop-title {
@@ -164,8 +166,6 @@ footer div li a {
   cursor: pointer;
 }
 
-
-
 .social-footer-icons{
   padding: 20px;
 }
@@ -196,7 +196,6 @@ footer div li a {
   background: #bb0000;
   color: white;
 }
-
 
 
 
@@ -339,4 +338,8 @@ footer ul li {
   height: 75px;
   margin: 10px auto;
   padding: 5px;
+}
+
+.cardBodyStyle {
+  background-color: rgba(23, 116, 170, 0.39);
 }
