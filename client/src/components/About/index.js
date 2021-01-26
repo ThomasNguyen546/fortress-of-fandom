@@ -8,6 +8,7 @@ function About() {
             <div className="page-container">
                 <div id="about-header">
                     <img src={logoImg} width="250" height="300" alt="Fortress of fandom logo" />
+                    <br></br>
                     <div className="section-title" class="vintage__container">
                         <h2 class="vintage vintage__top">Fortress of Fandom</h2>
                         <h2 class="vintage vintage__bot">Fortress of Fandom</h2>
