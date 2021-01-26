@@ -60,6 +60,7 @@ header .headerName a {
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   position: relative;
   padding: 0 10px 0 30px;
+  font-weight: bold;
 }
 
 header nav ul {
@@ -80,6 +81,7 @@ nav ul li a {
   font-size: 32px;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  /* font-weight: bold; */
 }
 
 nav ul li a:hover {
@@ -164,41 +166,9 @@ footer div li a {
   cursor: pointer;
 }
 
-
-
 .social-footer-icons{
   padding: 20px;
 }
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-
-
 
 @import url(https://fonts.googleapis.com/css?family=Satisfy); 
 @import url(https://fonts.googleapis.com/css?family=Six+Caps);
@@ -338,7 +308,47 @@ footer ul li {
   margin: 10px auto;
   padding: 5px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> b5b07debab16bdb13a12a23b5fb6a7302bbef025
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS */
+@media screen and (max-width: 980px) {
+  .fof {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .vintage {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 192px;
+    letter-spacing: 10px;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+  }
+  
+  .vintage__top {
+    background: linear-gradient(red, rgb(230, 200, 160));
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    z-index: 1;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+  }
+  
+  .vintage__bot {
+    text-shadow: none;
+  }
+
+  #shadow{
+    font-family: none;
+    font-size: 0px;
+    letter-spacing: 10px;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
