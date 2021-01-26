@@ -8,16 +8,20 @@ import coozyImg from '../../assets/can-coozy.png'
 function Shop() {
     return (
         <div className="page-container">
-            <div className="shopTitle">
-                <h2 className="shop-title">Visit Fortress of Fandom Store!</h2>
+            <div id="about-header">
+          <div className="section-title" class="vintage__container">
+            <h2 class="vintage vintage__top">FoF Store</h2>
+            <h2 class="vintage vintage__bot">FoF Store</h2>
+          </div>
+        
                 <div className="shopButton">
                     <Button className="btn-lg btn-block" href="https://storefrontier.com/thefofpod" target="_blank" variant="success">Visit Store!</Button>
                 </div>
-                <p>
+                {/* <p>
                     Notes: option to go directly to product, make shop button prominent with colors, good use of header tags, maybe description with price.
                     <br></br>
                     add button in homepage that goes directly to store (call to action). Favicon icon (shopping cart) (fontawesome?)
-                </p>
+                </p> */}
             </div>
             <Carousel class="carousel">
                 <Carousel.Item interval={3000}>
@@ -26,10 +30,10 @@ function Shop() {
                         src={tshirtImg}
                         alt="First slide"
                     />
-                    <Carousel.Caption>
+                    {/* <Carousel.Caption>
                         <h3>First slide label</h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
+                    </Carousel.Caption> */}
                 </Carousel.Item>
                 <Carousel.Item interval={3000}>
                     <img
@@ -37,10 +41,10 @@ function Shop() {
                         src={tshirt2Img}
                         alt="Second slide"
                     />
-                    <Carousel.Caption>
+                    {/* <Carousel.Caption>
                         <h3>Second slide label</h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
+                    </Carousel.Caption> */}
                 </Carousel.Item>
                 <Carousel.Item interval={3000}>
                     <img
@@ -48,10 +52,10 @@ function Shop() {
                         src={coozyImg}
                         alt="Third slide"
                     />
-                    <Carousel.Caption>
+                    {/* <Carousel.Caption>
                         <h3>Third slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
+                    </Carousel.Caption> */}
                 </Carousel.Item>
             </Carousel>
         </div>
