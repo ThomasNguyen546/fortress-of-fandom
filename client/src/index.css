@@ -19,7 +19,7 @@ body .background {
   display: block;
   position: relative;
   padding-bottom: 100px; /* height of your footer */
-  background-color: rgba(148, 216, 255, 0.8);
+  background-color: rgba(34, 234, 248, 0.205);
  }
 
 a {
@@ -60,7 +60,6 @@ header .headerName a {
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   position: relative;
   padding: 0 10px 0 30px;
-  font-weight: bold;
 }
 
 header nav ul {
@@ -81,7 +80,6 @@ nav ul li a {
   font-size: 32px;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  /* font-weight: bold; */
 }
 
 nav ul li a:hover {
@@ -93,7 +91,7 @@ nav ul li a:hover {
   margin: 80px auto;
   margin-bottom: 15px;
   width: 90%;
-  background-color: rgba(125, 201, 245, 0.8);
+  background-color: rgba(151, 217, 255, 0.8);
   padding: 40px;
 }
 
@@ -130,6 +128,8 @@ nav ul li a:hover {
 
 .carousel {
   text-align: center;
+  outline-style: solid;
+  outline-color:rgba(0, 0, 0, 0.205);
 }
 
 .shopTitle .shop-title {
@@ -169,6 +169,35 @@ footer div li a {
 .social-footer-icons{
   padding: 20px;
 }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
 
 @import url(https://fonts.googleapis.com/css?family=Satisfy); 
 @import url(https://fonts.googleapis.com/css?family=Six+Caps);
@@ -279,6 +308,8 @@ body {
 /* footer */
 .social-links {
   text-align: center;
+  background-image: url(../src/assets/hero.jpg);
+  background-size: cover;
 }
 
 footer {
@@ -309,46 +340,6 @@ footer ul li {
   padding: 5px;
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS */
-@media screen and (max-width: 980px) {
-  .fof {
-    font-family: 'Courier New', Courier, monospace;
-  }
-
-  .vintage {
-    font-family: 'Six Caps', sans-serif;
-    font-size: 192px;
-    letter-spacing: 10px;
-    line-height: 1;
-    margin: 0;
-    position: relative;
-  }
-  
-  .vintage__top {
-    background: linear-gradient(red, rgb(230, 200, 160));
-    -webkit-background-clip: text;
-    background-clip: text;
-    position: absolute;
-    z-index: 1;
-    -webkit-text-fill-color: transparent;
-    /* text-fill-color: transparent; */
-  }
-  
-  .vintage__bot {
-    text-shadow: none;
-  }
-
-  #shadow{
-    font-family: none;
-    font-size: 0px;
-    letter-spacing: 10px;
-    line-height: 1;
-    margin: 0;
-    position: relative;
-  }
+.cardBodyStyle {
+  background-color: rgba(23, 116, 170, 0.39);
 }
-
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-
-
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
