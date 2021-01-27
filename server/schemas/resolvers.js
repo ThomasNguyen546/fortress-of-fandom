@@ -16,9 +16,8 @@ const resolvers = {
         .select('-__v -password')
         .populate('comments');
     },
-    comments: async (parent, { username }) => {
-      const params = username ? { username } : {};
-      return Comments.find(params).sort({ createdAt: -1 });
+    comments: async (parent) => {
+      return Comments.find().sort({ createdAt: -1 });
     },
     comment: async (parent, { _id }) => {
       return Comments.findOne({ _id });
