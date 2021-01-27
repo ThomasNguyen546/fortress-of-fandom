@@ -8,7 +8,7 @@ const typeDefs = gql`
     username: String
     password: String
     email: String
-    Comments: [Comment]
+    comments: [Comment]
   }
 
   type Comment {
@@ -26,7 +26,7 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
-    comments(username: String!): [Comment]
+    comments: [Comment]
     comment(_id: ID!): Comment
   }
 
