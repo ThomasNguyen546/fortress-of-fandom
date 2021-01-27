@@ -39,7 +39,7 @@ function Podcast() {
             <Card>
               <iframe src="https://open.spotify.com/embed-podcast/episode/51P3LAS7ZzJVJ3yGPD0SGC" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
               <Card.Body className="cardBodyStyle">
-                <Card.Title>Ep.46!! Who you gonna call?? Chostbusters!! ft. Jazmine</Card.Title>
+                <Card.Title>Ep.46!! Who you gonna call?? Ghostbusters!! ft. Jazmine</Card.Title>
                 <Card.Text>
                   This is an episode of biblical proportions. What do we mean, "biblical"?
                           <br></br>
