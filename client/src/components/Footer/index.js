@@ -15,13 +15,13 @@ function Footer() {
         <footer>
             <div className="social-links">
             <a href="https://www.facebook.com/thefofpod/" target="_blank" rel="noopener noreferrer">
-                <img class="footerImage" src={facebookImage} alt="facebook-logo" />
+                <img class="footerImage" id="FaceBook" src={facebookImage} alt="facebook-logo" />
             </a>
             <a href="https://www.instagram.com/thefofpod/" target="_blank" rel="noopener noreferrer">
-                <img class="footerImage" src={instagramImage} alt="instagram-logo"/>
+                <img class="footerImage" id="Instagram" src={instagramImage} alt="instagram-logo"/>
             </a>
             <a href="https://www.youtube.com/channel/UC_VpQUhi0_WgT9wYNZRj79w" target="_blank" class="footerImage" rel="noopener noreferrer">
-                <img class="footerImage" src={youtubeImage} alt="youtube-logo"/>
+                <img class="footerImage" id="Youtube" src={youtubeImage} alt="youtube-logo"/>
             </a>
             <a href="https://podcasts.apple.com/us/podcast/fortress-of-fandom/id1432187277" target="_blank" class="footerImage" rel="noopener noreferrer">
                 <img class="footerImage" src={applePodcastImage} alt="applepodcast-logo"/>

@@ -48,6 +48,9 @@ function Discussion({ comments }) {
                     className="formFields"
                 >
                 </textarea>
+                <button className='login-btn formFields' type="login">
+                    Login
+            </button>
                 <button className='submit-btn formFields' type="submit">
                     Submit
             </button>
