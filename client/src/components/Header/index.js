@@ -11,6 +11,11 @@ function Header () {
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
+
+  // function handleNavClick(e) {
+  //   e.preventDefault();
+  //   window.location.replace = '/';
+  // }
   
   return (
     <header>
