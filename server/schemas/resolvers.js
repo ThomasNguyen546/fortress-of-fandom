@@ -47,12 +47,13 @@ const resolvers = {
       return { token, user };
     }, 
     addComment: async (parent, args, context) => {
+      console.log(args, context)
       if(context.user) {
-        const comment = await Comment.create({...args, username: context.user.username });
-
+        var username = context.user
+        const comment = await Comments.create({...args, username: username });
         await User.findByIdAndUpdate (
           {_id: context.user._id},
-          {$push: { comments: comment._id}},
+          {$push: {comments: comment._id}},
           {new: true}
         )
         return comment;

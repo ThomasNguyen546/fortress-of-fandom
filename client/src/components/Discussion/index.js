@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useMutation } from '@apollo/react-hooks';
 import { ADD_COMMENT } from '../../utils/mutations';
 import { QUERY_COMMENTS } from '../../utils/queries'
 import '../../App.css';
 
 function Discussion({ comments }) {
+    useEffect(() =>{
+        getComments();
+    })
+
     const [commentText, setCommentText] = useState('');
 
     const [addComment, { error }] = useMutation(ADD_COMMENT, {
@@ -12,6 +16,7 @@ function Discussion({ comments }) {
             try {
                 const { comments } = cache.readQuery({ query: QUERY_COMMENTS });
                 //put the newest comment at the beginning of the array
+                console.log(comments);
                 cache.writeQuery({
                     query: QUERY_COMMENTS,
                     data: { comments: [addComment, ...comments] }
@@ -21,17 +26,34 @@ function Discussion({ comments }) {
             }
         }
     });
+    const getComments = async () => {
+        try {
+            const { comments } = cache.readQuery({ query: QUERY_COMMENTS });
+            //put the newest comment at the beginning of the array
+            console.log(comments);
+            cache.writeQuery({
+                query: QUERY_COMMENTS,
+                data: { comments: [addComment, ...comments] }
+            })
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
     const handleFormSubmit = async event => {
         event.preventDefault();
         try {
             await addComment({
                 variables: { commentText }
             });
-            setCommentText('');
+            await setCommentText('');
         } catch (e) {
             console.error(e);
         }
     };
+    const handleCommentChange = event => {
+        setCommentText(event.target.value);
+    }
 
 
     return (
@@ -45,6 +67,7 @@ function Discussion({ comments }) {
                 <textarea
                     placeholder="Spiderman is undoubtly the best super hero there is..."
                     value={commentText}
+                    onChange={handleCommentChange}
                     className="formFields"
                 >
                 </textarea>

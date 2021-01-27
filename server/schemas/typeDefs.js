@@ -8,7 +8,7 @@ const typeDefs = gql`
     username: String
     password: String
     email: String
-    Comments: [Comment]
+    comments: [Comment]
   }
 
   type Comment {
