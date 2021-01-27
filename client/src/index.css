@@ -341,6 +341,10 @@ footer ul li {
   padding: 5px;
 }
 
+.img-background {
+  background-color: blue;
+}
+
 .cardBodyStyle {
   background-color: rgba(23, 116, 170, 0.39);
 }
