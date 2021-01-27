@@ -30,7 +30,7 @@ function Footer() {
                 <img class="footerImage" src={spotifyImage} alt="spotify-logo"/>
             </a>
             <a href="https://twitter.com/theFoFpod" target="_blank" class="footerImage" rel="noopener noreferrer">
-                <img class="footerImage" src={twitterImage} alt="spotify-logo"/>
+                <img class="footerImage" src={twitterImage} alt="twitter-logo"/>
             </a>
             <a href="https://storefrontier.com/thefofpod" target="_blank" class="footerImage" rel="noopener noreferrer">
                 <img class="footerImage" src={shopImage} alt="shop-logo"/>

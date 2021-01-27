@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
+import { QUERY_COMMENTS } from './utils/queries'
 // import { HashRouter, Switch, Route } from "react-router-dom";
 import About from './components/About';
 import Header from './components/Header';
@@ -29,6 +30,7 @@ const client = new ApolloClient({
 });
 
 function App() { 
+  
   return (
     <div>
     <ApolloProvider client={client}>
@@ -40,6 +42,9 @@ function App() {
             <Route exact path="/about" component={About} />
             <Route exact path="/Podcast" component={Podcast} />
             <Route exact path="/Discussion" component={Discussion} />
+            <Route exact path="/Discussion" render={() => {
+              <Discussion comments={[]} />
+            }} />
             <Route exact path="/Shop" component={Shop} />
             <Route exact path="/Signup" component={SignUp} />
             <Route exact path="/Login" component={Login} />
