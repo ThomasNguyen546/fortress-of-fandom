@@ -130,6 +130,7 @@ nav ul li a:hover {
   text-align: center;
   outline-style: solid;
   outline-color:rgba(0, 0, 0, 0.205);
+  background-color: rgba(39, 104, 243, 0.247);
 }
 
 .shopTitle .shop-title {
