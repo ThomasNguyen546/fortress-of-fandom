@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { useMutation } from '@apollo/react-hooks';
 import { ADD_COMMENT } from '../../utils/mutations';
 import { QUERY_COMMENTS } from '../../utils/queries'
 import '../../App.css';
 
 function Discussion({ comments }) {
-    useEffect(() =>{
-        getComments();
-    })
+  
 
     const [commentText, setCommentText] = useState('');
 
@@ -26,19 +24,7 @@ function Discussion({ comments }) {
             }
         }
     });
-    const getComments = async () => {
-        try {
-            const { comments } = cache.readQuery({ query: QUERY_COMMENTS });
-            //put the newest comment at the beginning of the array
-            console.log(comments);
-            cache.writeQuery({
-                query: QUERY_COMMENTS,
-                data: { comments: [addComment, ...comments] }
-            })
-        } catch (e) {
-            console.error(e);
-        }
-    }
+    
 
     const handleFormSubmit = async event => {
         event.preventDefault();
