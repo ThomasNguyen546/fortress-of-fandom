@@ -15,7 +15,7 @@ function Shop() {
           </div>
         
                 <div className="shopButton">
-                    <Button className="btn-lg btn-block" href="https://storefrontier.com/thefofpod" target="_blank" variant="success">Visit Store!</Button>
+                    <Button className="btn-lg btn-block" href="https://storefrontier.com/thefofpod" target="_blank" variant="success">Visit the store to level up!</Button>
                 </div>
                 {/* <p>
                     Notes: option to go directly to product, make shop button prominent with colors, good use of header tags, maybe description with price.

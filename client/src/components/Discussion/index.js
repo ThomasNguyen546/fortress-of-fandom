@@ -43,7 +43,7 @@ function Discussion({ comments }) {
                 onSubmit={handleFormSubmit}
             >
                 <textarea
-                    placeholder="Spiderman is undoubtly the best super hero there is..."
+                    placeholder="Spider-Man is undoubtedly the best super hero there is..."
                     value={commentText}
                     className="formFields"
                 >
