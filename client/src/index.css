@@ -19,7 +19,7 @@ body .background {
   display: block;
   position: relative;
   padding-bottom: 100px; /* height of your footer */
-  background-color: rgba(34, 234, 248, 0.205);
+  background-color: rgba(34, 234, 248, 0.178);
  }
 
 a {
