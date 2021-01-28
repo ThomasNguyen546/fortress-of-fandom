@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
-import { QUERY_COMMENTS } from './utils/queries'
 // import { HashRouter, Switch, Route } from "react-router-dom";
 import About from './components/About';
 import Header from './components/Header';
