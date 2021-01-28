@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import { useMutation, useQuery } from '@apollo/react-hooks';
 import { ADD_COMMENT } from '../../utils/mutations';
 import { QUERY_COMMENTS } from '../../utils/queries'
@@ -64,10 +64,16 @@ function Discussion() {
                 Submit
                 </button>
                 </form>
-                <h5>Here are some peoples comments!</h5>
-                
+                <h5 className="commentHeading">Here are some people's comments!</h5>
                 {!loading ? comments.map(comment=> {
-                    return comment.commentText
+                    return (
+                        <div key={comment._id} className="commentCard">
+                        
+                        <h6 className="commentUsername"><i>{comment.username}</i>- <span>{comment.createdAt}</span></h6>
+                        <p class="commentCardText">{comment.commentText}</p>
+                    
+                        </div>
+                        )
                 }) : "loading..."}
             </section>
             );

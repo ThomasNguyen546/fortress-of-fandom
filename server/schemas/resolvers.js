@@ -16,8 +16,9 @@ const resolvers = {
         .select('-__v -password')
         .populate('comments');
     },
-    comments: async (parent) => {
-      return Comments.find().sort({ createdAt: -1 });
+    comments: async (parent, {username}) => {
+      console.log(username);
+      return Comments.find(username).sort({ createdAt: -1 });
     },
     comment: async (parent, { _id }) => {
       return Comments.findOne({ _id });
@@ -46,9 +47,9 @@ const resolvers = {
       return { token, user };
     }, 
     addComment: async (parent, args, context) => {
-      console.log(args, context)
+      console.log(context)
       if(context.user) {
-        var username = context.user
+        var username = context.user.username
         const comment = await Comments.create({...args, username: username });
         await User.findByIdAndUpdate (
           {_id: context.user._id},
