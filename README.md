@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+<h1 align="center">Fortress of Fandom</h1>
+  
+<p align="center">
+    <img src="https://img.shields.io/github/repo-size/gardukman/fortress-of-fandom" />
+    <img src="https://img.shields.io/github/languages/top/gardukman/fortress-of-fandom"  />
+    <img src="https://img.shields.io/github/issues/gardukman/fortress-of-fandom" />
+    <img src="https://img.shields.io/github/last-commit/gardukman/fortress-of-fandom" >
+</p>  
+<p align="center">
+    <img src="https://img.shields.io/badge/javascript-yellow" />
+    <img src="https://img.shields.io/badge/css-purple" />
+    <img src="https://img.shields.io/badge/express-orange" />
+    <img src="https://img.shields.io/badge/react-blue"  />
+    <img src="https://img.shields.io/badge/handlebars-red"  />
+    <img src="https://img.shields.io/badge/mongoDB-blue"  />
+    <img src="https://img.shields.io/badge/graphQL-cyan"  />
+    <img src="https://img.shields.io/badge/apollo-green" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description 
 
-## Available Scripts
+Welcome to the Fortress of Fandom Podcast (FoF Pod), where we discuss all things nerdy, geeky, and fandom related! Comics, movies, games, sports, food and so much more! Listen in and enter the Fortress! 
+Fortress of Fandom Home Page
 
-In the project directory, you can run:
+![Screenshot Fof-Homepage](/client/src/assets/fof-home.png)
+Fortress of Fandom Podcast Page
+![Screenshot Fof-Podcast](/client/src/assets/fof-podcast.png)
+Fortress of Fandom Discussion Page
+![Screenshot Fof-DiscussionPage](/client/src/assets/fof-discussion.png)
+Fortress of Fandom Shop Page
+![Screenshot Fof-Shop](/client/src/assets/fof-shop.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Link to Deployed Application on Heroku
+[Fortress of Fandom](https://immense-mesa-76865.herokuapp.com/about)
 
-### `npm test`
+## Table of Contents
+- [Description](#description)
+- [Link to Deployed Application on Heroku](#link-to-deployed-application-on-heroku)
+- [Table of Contents](#table-of-contents)
+- [Technologies](#technologies)
+- [Installation & Usage](#installation--usage)
+- [Credits](#credits)
+- [Contributors](#contributors)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies
+- MongoDB
+- Express
+- React.js
+- Node.js
+- Apollo
+- Heroku 
 
-### `npm run build`
+## Installation & Usage
+If you wish to run this app on your local computer, fork the project then clone it onto your computer. Once cloned onto your computer, navigate to the root directory of the project and install all packages by typing `npm i`. After downloading the necessary packages navigate to the server directory and as well type `npm i` to download the necessary dependencies. Follow these same steps in the client directory. Once all packages have been downloaded, navigate to the root directory of the project and type `npm start` in your terminal. There both the server and client will launch on your localhost. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Credits
+- Group collaboration
+- Trilogy Course Material, Instructor, and TAs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributors
+- [Thomas Nguyen](https://github.com/thomasnguyen546)
+- [Bryce Drawe](https://github.com/bdrawe)
+- [Logan Page](https://github.com/logandpage)
+- [Roger Saldivar](https://github.com/salgorog)
+- [Garrett Manwaring](https://github.com/gardukman)
 
-### `npm run eject`
+Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
