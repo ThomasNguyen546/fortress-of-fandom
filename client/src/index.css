@@ -317,9 +317,28 @@ footer ul li {
 .cardBodyStyle {
   background-color: rgba(23, 116, 170, 0.39);
 }
+.commentCard {
+  background-color:white;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  filter: drop-shadow(5px 5px 7px rgb(12, 12, 12));
+}
 
-
-
+.commentUsername {
+  text-align: left;
+  color: grey
+}
+.commentCardText {
+  background-color: rgba(71, 133, 247, 0.8);
+  padding: 10px;
+  border-radius: 7px;
+}
+.commentHeading {
+  margin: 15px;
+  color: white;
+  font-size: 30px;
+}
 
 
 /* Media Queries */
@@ -370,9 +389,7 @@ footer ul li {
       40px 20px rgba(0, 0, 0, 0.1);
   }
 
-  .card {
 
-  }
 
 }
 
