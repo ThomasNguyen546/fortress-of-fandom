@@ -18,6 +18,12 @@ function Nav(props) {
                 <li className="mx-2" class="intro">
                     <Link to="/shop">Shop</Link>
                 </li>
+                <li className="mx-2" class="intro">
+                    <Link to="/login">Log in</Link>
+                </li>
+                <li className="mx-2" class="intro">
+                    <Link to="/signup">Sign up</Link>
+                </li>
             </ul>
         </nav>
 
