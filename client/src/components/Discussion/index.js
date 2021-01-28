@@ -47,6 +47,10 @@ function Discussion() {
     
     return (
         <section className="discussion">
+            <div className="section-title" class="vintage__container">
+                <h2 class="vintage vintage__top fof">Discussion</h2>
+                <h2 class="vintage vintage__bot fof" id="shadow">Discussion</h2>
+            </div>
             <h4> Join the Discussion of this week's Episode!</h4>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/6G8YcVVgBZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <form

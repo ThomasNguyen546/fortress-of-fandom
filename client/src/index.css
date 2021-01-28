@@ -39,7 +39,7 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 130px;
+  height: 200px;
   padding: 20px;
 }
 
@@ -79,6 +79,8 @@ nav ul li a {
   font-size: 32px;
   text-shadow: 6px 6px 6px black;
   cursor: pointer;
+  display: block;
+  font-family: 'Satisfy', cursive;
 }
 
 nav ul li a:hover {
@@ -166,39 +168,6 @@ footer div li a {
   cursor: pointer;
 }
 
-.social-footer-icons{
-  padding: 20px;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-
-
 @import url(https://fonts.googleapis.com/css?family=Satisfy); 
 @import url(https://fonts.googleapis.com/css?family=Six+Caps);
 
@@ -224,7 +193,7 @@ body {
   font-family: 'Satisfy', cursive;
   font-size: 32px;
   text-shadow: 1px 1px black;
-  transform: rotate(-10deg);
+  transform: rotate(-15deg);
 }
 
 .intro--the {
@@ -349,3 +318,204 @@ footer ul li {
   background-color: rgba(23, 116, 170, 0.39);
 }
 
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .vintage__container {
+    display: inline-block;
+    margin: 25px auto 40px;
+  }
+  
+  .vintage {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 100px;
+    letter-spacing: 10px;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+  }
+  
+  .vintage__top {
+    background: linear-gradient(red, rgb(230, 200, 160));
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    z-index: 1;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+  }
+  
+  .vintage__bot {
+    text-shadow: 
+      2px 1px rgb(85, 10, 0),
+      4px 2px rgb(90, 15, 5),
+      6px 4px rgb(100, 20, 15),
+      8px 5px rgb(105, 25, 20),
+      10px 6px rgb(110, 30, 25),
+      12px 7px rgb(115, 30, 30),
+      14px 8px rgb(120, 30, 35),
+      16px 9px black,
+      18px 10px black,
+      20px 11px black,
+      22px 12px black,
+      24px 13px black,
+      28px 14px rgba(0, 0, 0, 0.9),
+      30px 15px rgba(0, 0, 0, 0.7),
+      32px 16px rgba(0, 0, 0, 0.5),
+      34px 17px rgba(0, 0, 0, 0.3),
+      36px 18px rgba(0, 0, 0, 0.1),
+      40px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .card {
+
+  }
+
+}
+
+@media screen and (max-width: 980px) {
+  .vintage__container {
+    display: inline-block;
+    margin: 25px auto 40px;
+  }
+  
+  .vintage {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 80px;
+    letter-spacing: 10px;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+  }
+  
+  .vintage__top {
+    background: linear-gradient(red, rgb(230, 200, 160));
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    z-index: 1;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+  }
+  
+  .vintage__bot {
+    text-shadow: 
+      2px 1px rgb(85, 10, 0),
+      4px 2px rgb(90, 15, 5),
+      6px 4px rgb(100, 20, 15),
+      8px 5px rgb(105, 25, 20),
+      10px 6px rgb(110, 30, 25),
+      12px 7px rgb(115, 30, 30),
+      14px 8px rgb(120, 30, 35),
+      16px 9px black,
+      18px 10px black,
+      20px 11px black,
+      22px 12px black,
+      24px 13px black,
+      28px 14px rgba(0, 0, 0, 0.9),
+      30px 15px rgba(0, 0, 0, 0.7),
+      32px 16px rgba(0, 0, 0, 0.5),
+      34px 17px rgba(0, 0, 0, 0.3),
+      36px 18px rgba(0, 0, 0, 0.1),
+      40px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vintage__container {
+    display: inline-block;
+    margin: 25px auto 40px;
+  }
+  
+  .vintage {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 60px;
+    letter-spacing: 10px;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+  }
+  
+  .vintage__top {
+    background: linear-gradient(red, rgb(230, 200, 160));
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    z-index: 1;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+  }
+  
+  .vintage__bot {
+    text-shadow: 
+      2px 1px rgb(85, 10, 0),
+      4px 2px rgb(90, 15, 5),
+      6px 4px rgb(100, 20, 15),
+      8px 5px rgb(105, 25, 20),
+      10px 6px rgb(110, 30, 25),
+      12px 7px rgb(115, 30, 30),
+      14px 8px rgb(120, 30, 35),
+      16px 9px black,
+      18px 10px black,
+      20px 11px black,
+      22px 12px black,
+      24px 13px black,
+      28px 14px rgba(0, 0, 0, 0.9),
+      30px 15px rgba(0, 0, 0, 0.7),
+      32px 16px rgba(0, 0, 0, 0.5),
+      34px 17px rgba(0, 0, 0, 0.3),
+      36px 18px rgba(0, 0, 0, 0.1),
+      40px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .vintage__container {
+    display: inline-block;
+    margin: 25px auto 40px;
+  }
+  
+  .vintage {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 45px;
+    letter-spacing: 10px;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+  }
+  
+  .vintage__top {
+    background: linear-gradient(red, rgb(230, 200, 160));
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    z-index: 1;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+  } 
+  
+  .vintage__bot {
+    text-shadow: 
+      2px 1px rgb(85, 10, 0),
+      4px 2px rgb(90, 15, 5),
+      6px 4px rgb(100, 20, 15),
+      8px 5px rgb(105, 25, 20),
+      10px 6px rgb(110, 30, 25),
+      12px 7px rgb(115, 30, 30),
+      14px 8px rgb(120, 30, 35),
+      16px 9px black,
+      18px 10px black,
+      20px 11px black,
+      22px 12px black,
+      24px 13px black,
+      28px 14px rgba(0, 0, 0, 0.9),
+      30px 15px rgba(0, 0, 0, 0.7),
+      32px 16px rgba(0, 0, 0, 0.5),
+      34px 17px rgba(0, 0, 0, 0.3),
+      36px 18px rgba(0, 0, 0, 0.1),
+      40px 20px rgba(0, 0, 0, 0.1);
+  }
+}
