@@ -52,7 +52,7 @@
     -->
     <script>
     if ('serviceWorker' in navigator) {window.addEventListener(load, () => {
-      navigator.serviceWorker.register('service-worker.js').then((res) => console.log('service worker found', res))
+      navigator.serviceWorker.register('serviceWorker.js').then((res) => console.log('service worker found', res))
     })} 
     navigator.serviceWorker.getRegistrations().then(registrations => console.log(registrations))</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
