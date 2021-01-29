@@ -3,6 +3,7 @@ import { useMutation, useQuery } from '@apollo/react-hooks';
 import { ADD_COMMENT } from '../../utils/mutations';
 import { QUERY_COMMENTS } from '../../utils/queries';
 import { Link } from "react-router-dom";
+import { Card, CardDeck } from 'react-bootstrap';
 import '../../App.css';
 
 
@@ -50,17 +51,22 @@ function Discussion() {
         <section className="discussion">
             <nav>
                 <ul className="d-flex flex-row justify-content-center">
-                    <li className="mx-2" class="intro">
+                    <li class="font-2">
                         <Link to="/login">Log in</Link>
                     </li>
-                    <li className="mx-2" class="intro">
+                    <li class="font-2">
                         <Link to="/signup">Sign up</Link>
                     </li>
                 </ul>
             </nav>
-
-            <h4> Join the Discussion of this week's Episode!</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6G8YcVVgBZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <CardDeck>
+            <Card class="card">
+              <iframe src="https://open.spotify.com/embed-podcast/episode/3YD6CUNHD0eKpXryJf332A" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              <Card.Body className="cardBodyStyle">
+                    <Card.Title>Join this weeks discussion!!!</Card.Title>
+              </Card.Body>
+            </Card>
+            </CardDeck>
             <form
                 className=""
                 onSubmit={handleFormSubmit}
@@ -72,9 +78,6 @@ function Discussion() {
                     className="formFields"
                 >
                 </textarea>
-                <button className='login-btn formFields' type="login">
-                    Login
-            </button>
                 <button className='submit-btn formFields' type="submit">
                     Submit
                 </button>

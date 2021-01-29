@@ -17,7 +17,7 @@ body .background {
   overflow: hidden;
   display: block;
   position: relative;
-  padding-bottom: 100px; /* height of your footer */
+  padding-bottom: 50px; /* height of your footer */
   background-color: rgb(5, 121, 129);
  }
 
@@ -68,6 +68,53 @@ header nav ul {
   align-items: center;
   list-style: none;
   padding: 10px;
+}
+
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  font-family: 'Satisfy', cursive;
+  font-size: 36px;
+  text-shadow: 6px 6px 6px black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: red;
+  display: block;
+  font-family: 'Satisfy', cursive;
+  font-size: 32px;
+  text-shadow: 1px 1px black;
+}
+
+/* .dropdown-content a:hover {background-color: #f1f1f1;} */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: red;
+  text-decoration: underline;
 }
 
 nav ul li a {
@@ -146,6 +193,12 @@ nav ul li a:hover {
   justify-content: center;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
 footer div ul{
   display: flex;
@@ -308,37 +361,19 @@ footer ul li {
   height: 75px;
   margin: 10px auto;
   padding: 5px;
+  background-color: white;
 }
 
-.img-background {
+/* .img-background {
   background-color: blue;
-}
+} */
 
 .cardBodyStyle {
   background-color: rgba(23, 116, 170, 0.39);
 }
-.commentCard {
-  background-color:white;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 10px;
-  filter: drop-shadow(5px 5px 7px rgb(12, 12, 12));
-}
 
-.commentUsername {
-  text-align: left;
-  color: grey
-}
-.commentCardText {
-  background-color: rgba(71, 133, 247, 0.8);
-  padding: 10px;
-  border-radius: 7px;
-}
-.commentHeading {
-  margin: 15px;
-  color: white;
-  font-size: 30px;
-}
+
+
 
 
 /* Media Queries */
@@ -389,7 +424,18 @@ footer ul li {
       40px 20px rgba(0, 0, 0, 0.1);
   }
 
-
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 30px;
+    font-weight: lighter;
+    font-size: 26px;
+    text-shadow: 6px 6px 6px black;
+    cursor: pointer;
+    display: block;
+    font-family: 'Satisfy', cursive;
+  }
 
 }
 
@@ -439,6 +485,19 @@ footer ul li {
       36px 18px rgba(0, 0, 0, 0.1),
       40px 20px rgba(0, 0, 0, 0.1);
   }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 30px;
+    font-weight: lighter;
+    font-size: 22px;
+    text-shadow: 6px 6px 6px black;
+    cursor: pointer;
+    display: block;
+    font-family: 'Satisfy', cursive;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -487,6 +546,19 @@ footer ul li {
       36px 18px rgba(0, 0, 0, 0.1),
       40px 20px rgba(0, 0, 0, 0.1);
   }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 30px;
+    font-weight: lighter;
+    font-size: 16px;
+    text-shadow: 6px 6px 6px black;
+    cursor: pointer;
+    display: block;
+    font-family: 'Satisfy', cursive;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -534,5 +606,18 @@ footer ul li {
       34px 17px rgba(0, 0, 0, 0.3),
       36px 18px rgba(0, 0, 0, 0.1),
       40px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 30px;
+    font-weight: lighter;
+    font-size: 12px;
+    text-shadow: 6px 6px 6px black;
+    cursor: pointer;
+    display: block;
+    font-family: 'Satisfy', cursive;
   }
 }
