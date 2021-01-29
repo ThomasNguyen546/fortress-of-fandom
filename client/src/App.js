@@ -9,6 +9,7 @@ import Podcast from './components/Podcast';
 import Discussion from './components/Discussion';
 import Shop from './components/Shop';
 import Login from './components/Login';
+
 import Footer from './components/Footer';
 import SignUp from './components/Signup';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
@@ -25,6 +26,7 @@ const client = new ApolloClient({
     });
   }, 
   uri: '/graphql'
+  // uri: 'http://localhost:3001/graphql'
 });
 
 function App() { 
