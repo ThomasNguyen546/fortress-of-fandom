@@ -14,7 +14,7 @@ function Podcast() {
         <div class="space"></div>
         <p>
           <CardDeck>
-            <Card>
+            <Card class="card">
               <iframe src="https://open.spotify.com/embed-podcast/episode/2FjfquutWHe5pkFYfIpHQD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
               <Card.Body className="cardBodyStyle">
                 <Card.Title>Ep.48!! Last of Us 2!! Batwoman!! WW84!! feat. Nathan Johnson!!</Card.Title>
@@ -25,7 +25,7 @@ function Podcast() {
                         </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
+            <Card class="card">
               <iframe src="https://open.spotify.com/embed-podcast/episode/3YD6CUNHD0eKpXryJf332A" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
               <Card.Body className="cardBodyStyle">
                 <Card.Title>Ep.47!! 2020 July-September movie speculation!! ft. That Guy Ralf!!</Card.Title>
@@ -36,7 +36,7 @@ function Podcast() {
                         </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
+            <Card class="card">
               <iframe src="https://open.spotify.com/embed-podcast/episode/51P3LAS7ZzJVJ3yGPD0SGC" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
               <Card.Body className="cardBodyStyle">
                 <Card.Title>Ep.46!! Who you gonna call?? Ghostbusters!! ft. Jazmine</Card.Title>
@@ -50,7 +50,7 @@ function Podcast() {
                         </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
+            <Card class="card">
               <iframe src="https://open.spotify.com/embed-podcast/episode/223gkbLjCr7NdeMgxy2pBD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
               <Card.Body className="cardBodyStyle">
                 <Card.Title>Ep.45!! Avatar news!! Bill and Ted!! Fantastic 4 Fancasting!! ft. Ryan Jeffery</Card.Title>

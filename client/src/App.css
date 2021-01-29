@@ -59,6 +59,13 @@
 .submit-btn:hover {
   background-color: #14bbe9;
 }
+.login-btn {
+  color: darkslategrey;
+  background-color: #61dafb;
+}
+.login-btn:hover {
+  background-color: #14bbe9;
+}
 .commentform {
   width: 100%;
   margin: 40px 200px;
