@@ -84,13 +84,14 @@ header nav ul {
 .dropdown {
   position: relative;
   display: inline-block;
+  color: blue;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   right: 0;
-  background-color: #f9f9f9;
+  background-color:rgb(5, 121, 129);
   min-width: 160px;
   z-index: 1;
 }
