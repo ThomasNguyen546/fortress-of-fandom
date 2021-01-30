@@ -84,6 +84,7 @@ header nav ul {
 .dropdown {
   position: relative;
   display: inline-block;
+  color: blue;
 }
 
 .dropdown-content {
