@@ -36,6 +36,8 @@ function Podcast() {
                         </Card.Text>
               </Card.Body>
             </Card>
+          </CardDeck>
+          <CardDeck>  
             <Card class="card">
               <iframe src="https://open.spotify.com/embed-podcast/episode/51P3LAS7ZzJVJ3yGPD0SGC" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
               <Card.Body className="cardBodyStyle">
